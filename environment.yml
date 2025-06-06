@@ -1,0 +1,22 @@
+name: interpretable-neural-embeddings-env
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - pytorch
+  - torchvision
+  - torchaudio
+  - jupyterlab=3.6
+  - jsonschema=4.17
+  - pip:
+      - umap-learn
+      - seaborn
+      - 'cebra[demos,dev,integrations,datasets]'
