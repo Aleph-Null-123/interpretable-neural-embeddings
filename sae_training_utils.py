@@ -64,6 +64,6 @@ def run_all_saes(emb_path, save_dir, architectures, expansion_factors,
                             print("Training:", name)
 
                             model = get_model(arch, input_dim, exp, l1=l1, topk=topk, bw=bw)
-                            model = train_sae(model, data_tensor, lr=lr, epochs=epochs)
+                            model = train_sae(model, data_tensor, lr=lr, epochs=epochs, batch_size = 512)
                             save_latents(model, data_tensor, os.path.join(save_dir, f"{name}.npy"))
 
