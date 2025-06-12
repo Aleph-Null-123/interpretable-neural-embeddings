@@ -8,7 +8,7 @@ for name in rats:
     for embedding_dimension in embedding_dimensions:
         run_all_saes(
             emb_path=f"final_embeddings/output_dimension_{embedding_dimension}_{name}/train_embeddings.npy",
-            save_dir=f"sae_gridsearch/{name}_{embedding_dimension}/",
+            save_dir=f"sae_gridsearch_2/{name}_{embedding_dimension}/",
             architectures=["standard", "topk", "jumprelu"],
             expansion_factors=[2, 4, 8],
             lr_vals=[1e-4, 3e-4, 1e-3],

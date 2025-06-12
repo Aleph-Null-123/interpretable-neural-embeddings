@@ -65,5 +65,8 @@ def run_all_saes(emb_path, save_dir, architectures, expansion_factors,
 
                             model = get_model(arch, input_dim, exp, l1=l1, topk=topk, bw=bw)
                             model = train_sae(model, data_tensor, lr=lr, epochs=epochs, batch_size = 512)
-                            save_latents(model, data_tensor, os.path.join(save_dir, f"{name}.npy"))
+                            latents_path = os.path.join(save_dir, f"{name}.npy")
+                            save_latents(model, data_tensor, latents_path)
 
+                            model_path = os.path.join(save_dir, f"{name}_model.pt")
+                            torch.save(model.state_dict(), model_path)
