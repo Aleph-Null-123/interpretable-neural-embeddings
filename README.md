@@ -1,7 +1,7 @@
 # Interpretable Latent Representations of Neural Activity via Sparse Autoencoders
 Project repository for: Interpretable Latent Representations of Neural Activity via Sparse Autoencoders
 
-Detailed written report available in PDF format in this repo.
+Detailed written [report](./interpretable_neural_embeddings.pdf) available in PDF format in this repo.
 
 This project explores post-hoc interpretability techniques for neural embeddings derived from population recordings of hippocampal activity. We apply sparse autoencoders (SAEs) to embeddings generated using [CEBRA](https://github.com/AdaptiveMotorControlLab/cebra), and evaluate how sparsification affects attribution to neural and behavioral variables without sacrificing decoding performance.
 
